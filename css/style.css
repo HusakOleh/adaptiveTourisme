@@ -1,0 +1,193 @@
+html, body{height: 100%;}
+body {background: #e6c9c9;} 
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+#drop {
+    display: none;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 60px;
+    height: 40px;
+}
+
+#drop .drop {
+    background-color: #f1f1f1;
+    margin-top: 6px;
+    height: 3px;
+    width: 100%;
+    display: block;
+    box-shadow: 2px 2px 2px #000;
+}
+
+#wrap {
+    width: 100%;    
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+
+.header {
+    width: 100%;
+    height: 490px;
+    background: url(../img/header.jpg) no-repeat center top;
+    background-size: cover;
+    -webkit-background-size: cover ;
+}
+
+
+
+.header .logo {
+    width: 161px;
+    padding: 20px 40px;
+}
+
+.nav {
+    width: 70%;
+    position: relative;
+    top: 260px;
+    margin: 0 auto;
+}
+.header ul {margin: 0 20% 0 10%;}
+
+.header li {
+    width: 20%;
+    float: left;
+    text-align: left;
+    margin: 0 2.5%;
+}
+
+.header li a{
+    width: 100%;
+    color: #fff;
+    font: 1.5em Arialr, sans-serif;
+    text-transform: uppercase;
+    text-shadow: #000 2px 2px 2px;
+    
+}
+
+.news {
+    padding: 60px 0 0 0;
+    width: 100%;
+}
+
+
+.content {
+    text-align: center;
+    float: left;
+    font: 1.4rem Arial, sans-serif;
+    text-transform: full-width;
+    font-weight: bold;
+    padding: 0 1%;
+}
+
+.content a {
+    color: #000;
+}
+.content img {
+    width: 100%;
+}
+
+.clear {clear: both;}
+
+.col-3>div:first-child {
+    padding-bottom: 14%;
+}
+
+.content-wrap {
+    margin-bottom: 4%;
+}
+
+.footer {
+    width: 100%;
+    height: 401px;
+    background: url(../img/footer.jpg) no-repeat center bottom;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.footer-content {
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.footer-block a{
+    color: #000;
+    font-weight: bold;
+}
+
+.footer-block {
+    padding: 100px 30px 0 30px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+@media screen and (max-width: 768px){
+    .container {
+    max-width: 768px;
+    height: 100%;
+    padding: 4% 0;
+    }
+    
+     #drop {
+        display: block;
+    }
+    
+    .header .logo {
+    float: right;
+    }
+    
+    .header {
+        height: 100%;
+    }
+    .nav {
+        display: none;
+        top: 0;
+        transition: ease 0.3s;
+    }
+    
+    .header .nav {top: -60px;}
+
+.header li {
+    clear: both;
+    text-align: left;
+    margin-top: 2%;
+    }
+
+
+    .col-3, .col-6, .col-9 {
+        clear: both; 
+        width: 100%;
+    }
+    .content-wrap {
+        margin: 0;
+    }
+    
+    .col-3>div:first-child {
+    padding-bottom: 0;
+    margin-bottom: 4%;
+    }
+    
+    .content {padding: 0;}
+    
+    .content-wrap>.content {margin-bottom: 4%;}
+    
+    .footer {height: auto;}
+    .footer-block {
+        display: block;
+        padding-top: 4%;
+    }
+    
+   
+}
+
